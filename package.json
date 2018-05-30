@@ -1,0 +1,25 @@
+{
+  "name": "twd-game",
+  "version": "0.0.1",
+  "description": "The Walking Dead the Game",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mpode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grumbash/TWD-Game.git"
+  },
+  "author": "Rosev Gleb, Yuri Petyhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grumbash/TWD-Game/issues"
+  },
+  "homepage": "https://github.com/Grumbash/TWD-Game#readme",
+  "devDependencies": {
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
