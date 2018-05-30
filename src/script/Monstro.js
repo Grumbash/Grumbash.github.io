@@ -1,10 +1,17 @@
+import '../script/shared.js';
 //for mixed property
 var randomProperty = function (obj) {
     var keys = Object.keys(obj)
     return obj[keys[keys.length * Math.random() << 0]];
 };
 
-class Monster {
+
+var firstName = ['Jone', "Bruce", "Will", "Tom", "Zak", "Bryan"]
+
+var secondName = ['ugly', "eerie", "terrible", "dirty", "raging", "agonizing"]
+var lastName = ['zombi', "ogr", "vampire", "werewolf", "witch", "demon"]
+export default class Monster {
+    
     constructor() {
         //i want do this better
         this.body = (function doBody() {
@@ -42,21 +49,29 @@ class Monster {
                 legs4: 4,
             })
         })();
+        this.heath = (function randomInteger(min, max) {
+            var rand = ~~(100 + Math.random() * (300 + 1 - 100));
+           
+            return rand;
+        })();
+        this.name = secondName.myshuffle()[0] + " " + lastName.myshuffle()[0] + " " + firstName.myshuffle()[0];
+
 
 
     }
-
+   
+    
 
     doMonstro() {
         return {
+            name:this.name,
             head: this.head,
             body: this.body,
             hands: this.hands,
-            legs: this.legs
+            legs: this.legs,
+            heath:this.heath
+
         }
     }
 
 }
-// object with prop legs,head,body,hands
-var Monstro = new Monster;
-console.log(Monstro.doMonstro());
