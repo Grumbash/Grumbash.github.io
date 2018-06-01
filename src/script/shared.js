@@ -1,4 +1,4 @@
-import '../script/shared.js';
+
 //mixed array
 Array.prototype.myshuffle = function () {
     var newArray = [];
@@ -19,3 +19,7 @@ Array.prototype.myshuffle = function () {
 
     return newArray;
 };
+
+
+
+

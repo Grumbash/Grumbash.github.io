@@ -1,18 +1,25 @@
 import '../script/shared.js';
+
+
+
 //for mixed property
 var randomProperty = function (obj) {
     var keys = Object.keys(obj)
     return obj[keys[keys.length * Math.random() << 0]];
 };
+var firstName = ['Jone', "Bruce", "Will", "Tom", "Zak", "Bryan"];
+
+var secondName = ['ugly', "eerie", "terrible", "dirty", "raging", "agonizing"];
+
+var lastName = ['zombi', "ogr", "vampire", "werewolf", "witch", "demon"];
 
 
-var firstName = ['Jone', "Bruce", "Will", "Tom", "Zak", "Bryan"]
-
-var secondName = ['ugly', "eerie", "terrible", "dirty", "raging", "agonizing"]
-var lastName = ['zombi', "ogr", "vampire", "werewolf", "witch", "demon"]
 export default class Monster {
     
     constructor() {
+       
+
+        
         //i want do this better
         this.body = (function doBody() {
             return randomProperty({
@@ -25,10 +32,11 @@ export default class Monster {
 
         this.head = (function doHead() {
             return randomProperty({
-                head1: 1,
-                head2: 2,
-                head3: 3,
-                head4: 4,
+
+                head1: 0,
+                head2: 50,
+                head3: 105,
+               
             })
         })();
 
