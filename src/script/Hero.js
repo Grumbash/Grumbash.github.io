@@ -1,6 +1,8 @@
 export default class Hero {
-  constructor(name) {
+  constructor(name, spriteURL) {
     this.name = name;
+    this.URL = spriteURL;
+    this.size = 35;
   }
 
   useSkill() {
@@ -11,7 +13,7 @@ export default class Hero {
     console.log("move");
   }
 
-  speak(){
+  say(){
     console.log(`Hi, my name is ${this.name}`);
   }
 }

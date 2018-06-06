@@ -1,39 +1,36 @@
 import Hero from './Hero.js';
 import Monster from './Monstro.js';
-//import './script/shared.js';
-var canvas = document.getElementById("canvas");
-console.log(canvas)
-var ctx = canvas.getContext("2d");
+import draw from './draw.js'
 
-//отрисовывает 
-function draw(url, setting) {
-    var img = document.createElement('img');
-    img.src = url;
-    img.onload = function () {
-     
-         ctx.drawImage(img,setting.positionX,setting.positionY,setting.imgWidth,setting.imgHeight,setting.positionOnFaildX,setting.positionOnFaildy,40,40)
-    }
-
-}
 
 let Monstro = new Monster;
-console.log(Monstro.doMonstro());
 draw('/src/img/spritesheet.png',{
-    positionX:Monstro.head, 
+    positionX:Monstro.head,
     positionY:0,
-    imgWidth:50, 
-    imgHeight:50, 
-    positionOnFaildX:0, 
+    imgWidth:50,
+    imgHeight:50,
+    positionOnFaildX:0,
     positionOnFaildy:150,
     sizeX:40,
     sizeY:40,
-    
+
 });
 
 
 
-let Carl = new Hero("Carl");
+let Kenny = new Hero("Kenny", "src/img/Kenny.png");
+let Luke = new Hero("Luke", "src/img/Luke.png");
+let Nick = new Hero("Nick", "src/img/Nick.png");
 // object with prop legs,head,body,hands
 
 
-console.log(Carl.speak());
+draw(`${Kenny.URL}`,{
+    positionX:0,
+    positionY:0,
+    imgWidth:240,
+    imgHeight:368,
+    positionOnFaildX:150,
+    positionOnFaildy:50,
+    sizeX:1*Kenny.size,
+    sizeY:3.5*Kenny.size,
+});
