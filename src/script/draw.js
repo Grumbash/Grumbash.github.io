@@ -1,6 +1,6 @@
-var canvas = document.getElementById("canvas");
+const canvas = document.getElementById("canvas");
 console.log(canvas)
-var ctx = canvas.getContext("2d");
+const ctx = canvas.getContext("2d");
 //отрисовывает
 export default function draw(url, setting) {
     var img = document.createElement('img');

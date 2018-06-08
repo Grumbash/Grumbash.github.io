@@ -1,6 +1,6 @@
+import draw from './draw.js';
 import Hero from './Hero.js';
 import Monster from './Monstro.js';
-import draw from './draw.js'
 
 
 let Monstro = new Monster;
@@ -19,10 +19,16 @@ draw('/src/img/spritesheet.png',{
 
 
 let Kenny = new Hero("Kenny", "src/img/Kenny.png");
-let Luke = new Hero("Luke", "src/img/Luke.png");
-let Nick = new Hero("Nick", "src/img/Nick.png");
 // object with prop legs,head,body,hands
+Kenny.shoot();
 
+document.addEventListener("keyup", (e)=>{
+  if (e.key ===" ") {
+    Kenny.shoot();
+  } else if (e.key ==="w"){
+    Kenny.cast();
+  }
+});
 
 draw(`${Kenny.URL}`,{
     positionX:0,

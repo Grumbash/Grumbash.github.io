@@ -5,8 +5,16 @@ export default class Hero {
     this.size = 35;
   }
 
-  useSkill() {
-    console.log("use the skill");
+  shoot() {
+    console.log("Bang-Bang!");
+  }
+
+  cast(){
+    console.log("Some-cast");
+  }
+
+  pray(){
+
   }
 
   move(){
