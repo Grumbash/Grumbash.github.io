@@ -47,6 +47,7 @@ html,body{
     left: 160px;
     &.animed{
       left: 0;  
+     
     }
 }
 .sprite#iconFist {
@@ -81,4 +82,10 @@ html,body{
     background-repeat: no-repeat;
     margin: 0 auto;
     z-index: 1;
+}
+
+#math{
+    width:50%;
+    height: 200px;
+    background: red;
 }

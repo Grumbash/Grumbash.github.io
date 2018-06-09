@@ -1,4 +1,6 @@
 import "./shared";
+import { test } from "./shared";
+
 var crel = require('crel');
 
 
@@ -15,7 +17,7 @@ var element = crel('div',{class:"wrapGamer"},
 
 
 
-var faild= document.getElementById("battle");
+export var faild= document.getElementById("battle");
 faild.appendChild(element);
 
 
@@ -31,5 +33,19 @@ faild.addEventListener("click",function(e){
         magicTarget.classList.toggle("animed");
         magicFirst.classList.toggle("animed");
         magicHammer.classList.toggle("animed");
-    }
+    };
+    if(e.target.id == "iconTarget"){
+        test();
+        e.target.style.pointerEvents="none";
+        console.log("health -10hp")
+    };
+    if(e.target.id == "iconKnef"){
+        console.log("health -20hp")
+    };
+    if(e.target.id == "iconFist"){
+        console.log("health -30hp")
+    };
+    if(e.target.id == "iconHammer"){
+        console.log("health -40hp")
+    };
 })
