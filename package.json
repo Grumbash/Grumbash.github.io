@@ -19,13 +19,11 @@
   "homepage": "https://github.com/Grumbash/TWD-Game#readme",
   "devDependencies": {
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "i": "^0.3.6",
     "image-webpack-loader": "^4.3.0",
     "node-sass": "^4.9.0",
     "npm": "^6.1.0",
-    "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^4.9.1",

@@ -7,6 +7,7 @@ html,body{
     width: 100%;
     min-height: 100vh;
     position: relative;
+    background: url("../img/bottleFeild.jpg") round;
 }
 .wrapGamer{
     position: absolute;
@@ -16,8 +17,6 @@ html,body{
     right: 60px;
     display: flex;
     align-items: center;
-
-
 }
 
 .sprite {
@@ -84,8 +83,16 @@ html,body{
     z-index: 1;
 }
 
-#math{
-    width:50%;
+#puzzleMoadal{
+    width:500px;
     height: 200px;
-    background: red;
+    background: beige;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hide-block{
+  display: none;
 }
