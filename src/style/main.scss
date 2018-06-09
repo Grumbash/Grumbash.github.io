@@ -34,31 +34,31 @@ html,body{
     top: 155px;
     transition: top 1s cubic-bezier(0, 0, 1, 1);
     left: 40%;
-   
+
 };
 .sprite#iconKnef.animed {
-   
+
     top: 0px;
 };
 .sprite#iconTarget {
     transition: left 1s cubic-bezier(0, 0, 1, 1);
-    
+
     background-position: -78px 0px;
     left: 160px;
     &.animed{
-      left: 0;  
-     
+      left: 0;
+
     }
 }
 .sprite#iconFist {
     background-position: -164px 0px;
     right:  160px;
     transition: right 1s cubic-bezier(0, 0, 1, 1);
-    
+
     &.animed{
         right: 0;
       }
-    
+
 }
 .sprite#iconHammer {
     transition: bottom 1s cubic-bezier(0, 0, 1, 1);
@@ -68,7 +68,7 @@ html,body{
     &.animed{
         bottom: 0;
       }
-    
+
 }
 
 

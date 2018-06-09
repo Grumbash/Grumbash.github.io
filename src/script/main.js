@@ -1,4 +1,5 @@
 import "./shared";
+import "../style/main.scss";
 import { test } from "./shared";
 
 var crel = require('crel');
