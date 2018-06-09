@@ -1,4 +1,4 @@
-
+import {faild} from "./main"
 //mixed array
 Array.prototype.myshuffle = function () {
     var newArray = [];
@@ -19,5 +19,12 @@ Array.prototype.myshuffle = function () {
 
     return newArray;
 };
+var crel = require('crel');
 
+export function test(){
+   var math = crel("div",{id:'math'},
+              crel("input",{type:"text"})  
+)
 
+faild.appendChild(math)
+}
