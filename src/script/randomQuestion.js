@@ -14,8 +14,10 @@ var numberTwo = rand(1,20);
   test.push(numberTwo);
 
  var question =  eval(" "+test[0] + test[1] + test[2]  ) 
- 
-return  +question;
+ var text = document.getElementById("quetion").innerHTML = test[0] + " " + test[1] + " " + test [2] ;
+ console.log(text)
+
+ return  +question
 })();
 
 
