@@ -1,5 +1,6 @@
 import "./shared";
-import { test } from "./shared";
+import "../style/main.scss";
+import { openPuzzleModal } from "./shared";
 
 var crel = require('crel');
 
@@ -35,8 +36,8 @@ faild.addEventListener("click",function(e){
         magicHammer.classList.toggle("animed");
     };
     if(e.target.id == "iconTarget"){
-        test();
-        e.target.style.pointerEvents="none";
+        openPuzzleModal();
+        // e.target.style.pointerEvents="none";
         console.log("health -10hp")
     };
     if(e.target.id == "iconKnef"){

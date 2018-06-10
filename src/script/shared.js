@@ -1,4 +1,6 @@
-import {faild} from "./main"
+import {faild} from "./main";
+import {randomQuestion} from "./randomQuestion";
+import { modalPuzzle } from "./DOM_elements"
 //mixed array
 Array.prototype.myshuffle = function () {
     var newArray = [];
@@ -19,12 +21,10 @@ Array.prototype.myshuffle = function () {
 
     return newArray;
 };
-var crel = require('crel');
 
-export function test(){
-   var math = crel("div",{id:'math'},
-              crel("input",{type:"text"})  
-)
-
-faild.appendChild(math)
+function openPuzzleModal(){
+  console.log(modalPuzzle);
+  modalPuzzle.classList.toggle("hide-block");
 }
+
+export {openPuzzleModal};
