@@ -23,7 +23,6 @@ Array.prototype.myshuffle = function () {
 };
 
 function openPuzzleModal(){
-  console.log(modalPuzzle);
   modalPuzzle.classList.toggle("hide-block");
 }
 

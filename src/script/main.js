@@ -1,6 +1,8 @@
 import "./shared";
-import "../style/main.scss";
+//import "../style/main.scss";
 import { openPuzzleModal } from "./shared";
+import {randomQuestion,answerForTest} from './randomQuestion';
+
 
 var crel = require('crel');
 
@@ -36,9 +38,12 @@ faild.addEventListener("click",function(e){
         magicHammer.classList.toggle("animed");
     };
     if(e.target.id == "iconTarget"){
-        openPuzzleModal();
-        // e.target.style.pointerEvents="none";
-        console.log("health -10hp")
+         openPuzzleModal();
+         setInterval(function(){
+            answerForTest;
+            
+         },1000)
+
     };
     if(e.target.id == "iconKnef"){
         console.log("health -20hp")
@@ -50,3 +55,4 @@ faild.addEventListener("click",function(e){
         console.log("health -40hp")
     };
 })
+
