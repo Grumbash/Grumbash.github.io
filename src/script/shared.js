@@ -26,4 +26,11 @@ function openPuzzleModal(){
   modalPuzzle.classList.toggle("hide-block");
 }
 
+//audio
+function soundClick(path) {
+    var audio = new Audio(); // Создаём новый элемент Audio
+    audio.src = path; // Указываем путь к звуку "клика"
+    audio.autoplay = true; // Автоматически запускаем
+  }
 export {openPuzzleModal};
+export {soundClick};

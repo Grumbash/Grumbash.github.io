@@ -1,5 +1,6 @@
 import {
-  openPuzzleModal
+  openPuzzleModal,
+  soundClick
  } from "./shared";
 
 export default class Hero {
@@ -17,18 +18,25 @@ export default class Hero {
 
   skillOne(e) {
     openPuzzleModal();
+    soundClick("/src/audio/blade.mp3")
   }
 
   skillTwo(e) {
     openPuzzleModal();
+    soundClick("/src/audio/arrow.mp3")
+   
+    
   }
 
   skillThree(e) {
     openPuzzleModal();
+    soundClick("/src/audio/hit.mp3")
   }
 
   skillFour(e) {
     openPuzzleModal();
+
+    soundClick("/src/audio/tor.mp3");
   }
 
   say(){
