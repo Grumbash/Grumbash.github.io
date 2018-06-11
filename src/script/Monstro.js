@@ -1,7 +1,5 @@
 import '../script/shared.js';
 
-
-
 //for mixed property
 var randomProperty = function (obj) {
     var keys = Object.keys(obj)
@@ -15,11 +13,8 @@ var lastName = ['zombi', "ogr", "vampire", "werewolf", "witch", "demon"];
 
 
 export default class Monster {
-    
-    constructor() {
-       
 
-        
+    constructor() {
         //i want do this better
         this.body = (function doBody() {
             return randomProperty({
@@ -32,11 +27,10 @@ export default class Monster {
 
         this.head = (function doHead() {
             return randomProperty({
-
                 head1: 0,
                 head2: 50,
                 head3: 105,
-               
+
             })
         })();
 
@@ -57,29 +51,11 @@ export default class Monster {
                 legs4: 4,
             })
         })();
-        this.heath = (function randomInteger(min, max) {
+        this.health = (function randomInteger(min, max) {
             var rand = ~~(100 + Math.random() * (300 + 1 - 100));
-           
             return rand;
         })();
         this.name = secondName.myshuffle()[0] + " " + lastName.myshuffle()[0] + " " + firstName.myshuffle()[0];
-
-
-
-    }
-   
-    
-
-    doMonstro() {
-        return {
-            name:this.name,
-            head: this.head,
-            body: this.body,
-            hands: this.hands,
-            legs: this.legs,
-            heath:this.heath
-
-        }
     }
 
 }

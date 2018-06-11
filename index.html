@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="./src/style/main.css">
 </head>
 <body>
-    <div id="battle"></div>
+    <div id="battle">
+      <div class="wrapGamer">
+        <div class="sprite" id="iconKnef"></div>
+        <div class="sprite" id="iconTarget"></div>
+        <div class="sprite" id="iconFist"></div>
+        <div class="sprite" id="iconHammer"></div>
+        <div id="hero">
+          <div class="health-bar" id="hero-health"></div>
+        </div>
+      </div>
+    </div>
     <section id="puzzleMoadal" class="puzzleMoadal hide-block">
       <p class="puzzleMoadal__text" id ='quetion'></p>
       <input type="text" class="puzzleMoadal__input" id ="answer">
-        <button id="getAnswer"></button>
+      <button id="getAnswer"></button>
+      <p class="puzzleMoadal__tryAgain" id="tryAgain"></p>
     </section>
     <script src="./dist/script/bundle.js"></script>
 </body>
