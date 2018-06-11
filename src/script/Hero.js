@@ -1,24 +1,34 @@
+import {
+  openPuzzleModal
+ } from "./shared";
+
 export default class Hero {
-  constructor(name, spriteURL) {
+  constructor(name, skills) {
     this.name = name;
-    this.URL = spriteURL;
-    this.size = 35;
+    this.skills = skills;
+    this.health = 300;
   }
 
-  shoot() {
-    console.log("Bang-Bang!");
+  clickOnThis(e) {
+      for (let i = 0; i < this.skills.length; i++) {
+        this.skills[i].classList.toggle("animed");
+      }
   }
 
-  cast(){
-    console.log("Some-cast");
+  skillOne(e) {
+    openPuzzleModal();
   }
 
-  pray(){
-
+  skillTwo(e) {
+    openPuzzleModal();
   }
 
-  move(){
-    console.log("move");
+  skillThree(e) {
+    openPuzzleModal();
+  }
+
+  skillFour(e) {
+    openPuzzleModal();
   }
 
   say(){

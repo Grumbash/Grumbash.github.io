@@ -1,52 +1,33 @@
 import "./shared";
-import "../style/main.scss";
-import { openPuzzleModal } from "./shared";
+//import "../style/main.scss";
+import Hero from "./Hero";
+import Monstro from "./Monstro";
 
-var crel = require('crel');
+import {
+  randomQuestion,
+  answerForTest
+} from './randomQuestion';
+
+import {
+  modalPuzzle,
+  tryAgainText,
+  player,
+  skills,
+  heroHP
+} from "./DOM_elements";
+
+const Kenny = new Hero("Kenny", skills);
+const Monster = new Monstro;
+
+heroHP.innerText = Kenny.health;
+player.addEventListener("click", Kenny.clickOnThis.bind(Kenny));
+
+skills[0].addEventListener("click", Kenny.skillOne.bind(Kenny));
+skills[1].addEventListener("click", Kenny.skillTwo.bind(Kenny));
+skills[2].addEventListener("click", Kenny.skillThree.bind(Kenny));
+skills[3].addEventListener("click", Kenny.skillFour.bind(Kenny));
 
 
-
-var element = crel('div',{class:"wrapGamer"},
-
-    crel('div',{class:"sprite",id:"iconKnef"}),
-    crel('div',{class:"sprite",id: "iconTarget"}),
-    crel('div',{class:"sprite",id: "iconFist"}),
-    crel('div',{class:"sprite",id: "iconHammer"}),
-    crel('div',{id:"hero"})
-);
-
-
-
+modalPuzzle.addEventListener("click", answerForTest);
 
 export var faild= document.getElementById("battle");
-faild.appendChild(element);
-
-
-var magicKnife = document.getElementById("iconKnef");
-
-var magicTarget= document.getElementById("iconTarget");
-var magicFirst= document.getElementById("iconFist");
-var magicHammer= document.getElementById("iconHammer");
-
-faild.addEventListener("click",function(e){
-    if(e.target.id == "hero"){
-        magicKnife.classList.toggle("animed");
-        magicTarget.classList.toggle("animed");
-        magicFirst.classList.toggle("animed");
-        magicHammer.classList.toggle("animed");
-    };
-    if(e.target.id == "iconTarget"){
-        openPuzzleModal();
-        // e.target.style.pointerEvents="none";
-        console.log("health -10hp")
-    };
-    if(e.target.id == "iconKnef"){
-        console.log("health -20hp")
-    };
-    if(e.target.id == "iconFist"){
-        console.log("health -30hp")
-    };
-    if(e.target.id == "iconHammer"){
-        console.log("health -40hp")
-    };
-})
