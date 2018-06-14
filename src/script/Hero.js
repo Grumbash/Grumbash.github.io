@@ -2,6 +2,8 @@ import {
   openPuzzleModal
  } from "./shared";
 
+import {randomQuestion} from "./randomQuestion"
+
 export default class Hero {
   constructor(name, skills) {
     this.name = name;
@@ -16,18 +18,22 @@ export default class Hero {
   }
 
   skillOne(e) {
+    randomQuestion();
     openPuzzleModal();
   }
 
   skillTwo(e) {
+    randomQuestion();
     openPuzzleModal();
   }
 
   skillThree(e) {
+    randomQuestion();
     openPuzzleModal();
   }
 
   skillFour(e) {
+    randomQuestion();
     openPuzzleModal();
   }
 
