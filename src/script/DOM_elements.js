@@ -16,7 +16,9 @@ const $monsterRightHand = document.querySelector('.monster__right-hand');
 const $monsterBody = document.querySelector('.monster__body');
 const $monsterLeftLeg = document.querySelector('.monster__left-leg');
 const $monsterRightLeg = document.querySelector('.monster__right-leg');
-
+const deadModal = document.querySelector('.dead-modal');
+const puzzleMoadalClose = document.querySelector('.puzzleMoadal__close');
+const $monsterName = document.querySelector('.monster__name');
 export {
   modalPuzzle,
   tryAgainText,
@@ -30,5 +32,8 @@ export {
   $monsterRightHand,
   $monsterBody,
   $monsterLeftLeg,
-  $monsterRightLeg
+  $monsterRightLeg,
+  deadModal,
+  puzzleMoadalClose,
+  $monsterName
 };

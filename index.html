@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="./src/style/main.css"> -->
 </head>
 <body>
+    <img src="./src/img/dead-modal.jpg" alt="dead-modal" class="dead-modal">
     <div id="battle">
       <div class="monster-wrapper">
         <div class="monster">
@@ -23,6 +24,7 @@
             <img src="./src/img/legRight.png" alt="monster__left-leg" class="monster__left-leg">
             <img src="./src/img/legRight.png" alt="monster__right-leg" class="monster__right-leg">
           </div>
+          <p class="monster__name"></p>
         </div>
       </div>
       <div class="wrapGamer">
@@ -36,10 +38,16 @@
       </div>
     </div>
     <section id="puzzleMoadal" class="puzzleMoadal hide-block">
-      <p class="puzzleMoadal__text" id ='quetion'></p>
-      <input type="text" class="puzzleMoadal__input" id ="answer">
-      <button id="getAnswer"></button>
+      <div class="puzzleMoadal__rules">
+        <p class="puzzleMoadal__side-text">Solve this or get a damage</p>
+        <p class="puzzleMoadal__text" id ='quetion'></p>
+      </div>
+      <div class="puzzleMoadal__inputs">
+        <input type="text" class="puzzleMoadal__input-text" id ="answer">
+        <button id="getAnswer" class="puzzleMoadal__getAnswer">Roll it!</button>
+      </div>
       <p class="puzzleMoadal__tryAgain" id="tryAgain"></p>
+      <button class="puzzleMoadal__close">X</button>
     </section>
     <script src="./dist/script/bundle.js"></script>
 </body>

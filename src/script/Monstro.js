@@ -3,7 +3,7 @@ import './shared';
 //for mixed property
 var firstName = ['Jone', "Bruce", "Will", "Tom", "Zak", "Bryan"];
 
-var secondName = ['ugly', "eerie", "terrible", "dirty", "raging", "agonizing"];
+var secondName = ['Ugly', "Eerie", "Terrible", "Dirty", "Raging", "Agonizing"];
 
 var lastName = ['zombi', "ogr", "vampire", "werewolf", "witch", "demon"];
 

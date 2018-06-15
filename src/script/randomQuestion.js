@@ -21,24 +21,26 @@ const randomQuestion = function randomQuestion(){
   test.push(numberTwo);
 
   question =  eval(" "+test[0] + test[1] + test[2]  )
-  var text = document.getElementById("quetion").innerHTML = test[0] + " " + test[1] + " " + test[2];
+  var text = document.getElementById("quetion").innerHTML = `:    ${test[0]} ${test[1]} ${test[2]}`;
   console.log(question);
  return  +question
 }
 
 function answerForTest(e){
-  var  answer = +document.getElementById('answer').value;
+  var $answer = document.getElementById('answer');
   if (e.target.id === "getAnswer") {
-    if(question === answer){
+    if(question === +$answer.value){
       console.log(`This is right answer: ${question}`);
       console.log(`This is your answer: ${answer}`);
-      tryAgainText.innerText = "Bravo! 👏👏👏";
       setDamageToMonster();
+      this.classList.toggle("hide-block");
+      $answer.value = "";
     }else {
       console.log(`This is right answer: ${question}`);
       console.log(`This is your answer: ${answer}`);
-      tryAgainText.innerText = "Try again! 😏";
       setDamageToHero()
+      this.classList.toggle("hide-block");
+      $answer.value = "";
     }
   }
 }

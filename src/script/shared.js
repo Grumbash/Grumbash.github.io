@@ -22,8 +22,13 @@ Array.prototype.myshuffle = function () {
     return newArray;
 };
 
-function openPuzzleModal(){
+function openPuzzleModal() {
   modalPuzzle.classList.toggle("hide-block");
 }
 
-export {openPuzzleModal};
+function closeModal(e) {
+  console.log(this.parentElement);
+  this.parentElement.classList.toggle("hide-block");
+}
+
+export {openPuzzleModal, closeModal};
