@@ -5,11 +5,26 @@ html,body{
     padding: 0;
 }
 
+.bg{
+  &-battle{
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  &-Kenny{
+    width: 98px;
+    height: 160px;
+    position:absolute;
+  }
+}
+
 #battle{
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     position: relative;
-    background: url("../img/bottleFeild.jpg") round;
+    // background: url("../img/bottleFeild.jpg") round;
     display: flex;
     align-items: flex-end;
 }
@@ -71,16 +86,14 @@ html,body{
 #hero {
     width: 98px;
     height: 160px;
-    background: url("../img/Kenny.png");
-    background-size: 100px;
-    background-repeat: no-repeat;
+    // background: url("../img/Kenny.png");
     margin: 0 auto;
     z-index: 1;
     position: relative;
 }
 
 .hero-name{
-  margin-top: 150%;
+  margin-top: 170%;
   position: relative;
   // bottom: -30%;
   color: #fff;
