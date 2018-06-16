@@ -1,5 +1,6 @@
 import {
-  openPuzzleModal
+  openPuzzleModal,
+  soundClick
  } from "./shared";
 
 import {randomQuestion} from "./randomQuestion"
@@ -21,24 +22,30 @@ export default class Hero {
     this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
+    soundClick("/src/audio/blade.mp3")
   }
 
   skillTwo(e) {
     this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
+    soundClick("/src/audio/arrow.mp3")
+
+
   }
 
   skillThree(e) {
     this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
+    soundClick("/src/audio/hit.mp3")
   }
 
   skillFour(e) {
     this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
+    soundClick("/src/audio/tor.mp3");
   }
 
   say(){

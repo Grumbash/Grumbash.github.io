@@ -81,6 +81,7 @@ html, body {
   background-repeat: no-repeat;
   margin: 0 auto;
   z-index: 1;
+  position: relative;
 }
 
 #puzzleMoadal {
@@ -91,6 +92,19 @@ html, body {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+.health-bar {
+  border-radius: 5px;
+  border: 4px solid #0aa4a4;
+  height: 20px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  top: -32px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
 }
 
 .hide-block {

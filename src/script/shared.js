@@ -30,4 +30,12 @@ function closeModal(e) {
   this.parentElement.classList.toggle("hide-block");
 }
 
-export {openPuzzleModal, closeModal};
+//audio
+function soundClick(path, vol) {
+    const audio = new Audio(); // Создаём новый элемент Audio
+    audio.src = path; // Указываем путь к звуку "клика"
+    audio.autoplay = true; // Автоматически запускаем
+    audio.volume = vol || 1;
+}
+
+export {openPuzzleModal, closeModal, soundClick};

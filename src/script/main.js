@@ -1,4 +1,4 @@
-import {closeModal} from "./shared";
+import {closeModal, soundClick} from "./shared";
 import "../style/main.scss";
 import Hero from "./Hero";
 import Monstro from "./Monstro";
@@ -36,3 +36,7 @@ skills[3].addEventListener("click", Kenny.skillFour.bind(Kenny));
 
 modalPuzzle.addEventListener("click", answerForTest);
 puzzleMoadalClose.addEventListener("click", closeModal);
+
+window.addEventListener("load", (e)=>{
+  soundClick("/src/audio/main_them.mp3", 0.2);
+});
