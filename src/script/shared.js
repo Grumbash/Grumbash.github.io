@@ -1,7 +1,10 @@
 import {faild} from "./main";
 import {randomQuestion} from "./randomQuestion";
 import { modalPuzzle, skills } from "./DOM_elements"
-//mixed array
+
+
+const pathSound = "./src/audio/";
+
 Array.prototype.myshuffle = function () {
     var newArray = [];
     var index = {};
@@ -38,4 +41,9 @@ function soundClick(path, vol) {
     audio.volume = vol || 1;
 }
 
-export {openPuzzleModal, closeModal, soundClick};
+function getRandomSound(arr){
+    const rand = Math.floor(Math.random() * (arr.length - 0));
+    return arr[rand];
+}
+
+export {openPuzzleModal, closeModal, soundClick, getRandomSound, pathSound};

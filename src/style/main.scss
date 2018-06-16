@@ -106,7 +106,6 @@ html,body{
 .puzzleMoadal{
     width:500px;
     height: 200px;
-    background: beige;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -158,7 +157,7 @@ html,body{
 }
 
 .hide-block{
-  display: none;
+  display: none !important;
 }
 
 #monster-health{
@@ -247,7 +246,7 @@ html,body{
   &__name{
     color: #fff;
     font-size: 12px;
-    width: 160px;
+    width: 190px;
     font-family: 'Eater', cursive;
   }
 }
@@ -261,8 +260,8 @@ html,body{
 
 .opacity-modal{
   z-index: 5;
-  transition: 3s ease all;
-  opacity: .7;
+  transition: 6s ease all;
+  opacity: .8;
 }
 
 .score{
@@ -285,5 +284,59 @@ html,body{
     width: 50px;
     height: 50px;
 
+  }
+}
+
+.record-table{
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  color: #fff;
+  font-family: 'Eater', cursive;
+  border: 1px dashed #ddd;
+  border-radius: 5px;
+  &__list{
+    list-style: none;
+    font-size: 22px;
+    padding: 0 25%;
+  }
+  &__item{
+    display: flex;
+    align-items: flex-end;
+  }
+  &__kills{
+    margin-top: 5px;
+    text-align: center;
+  }
+  &__title{
+    margin: 0;
+  }
+}
+
+.rules{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: .85;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  color: red;
+  background-color: rgb(30, 32, 35);
+  padding: 2% 5%;
+  &__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -35%);
+    color: red;
+    background-color: #000;
+    border-radius: 5px;
+    border: 1px solid #0a0a0a;
+    padding-right: 3px;
   }
 }

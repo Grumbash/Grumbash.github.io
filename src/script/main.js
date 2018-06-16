@@ -16,7 +16,10 @@ import {
   skills,
   heroHP,
   puzzleMoadalClose,
-  scroreText
+  scroreText,
+  recordTableItem,
+  recordTable,
+  rulesCloseBtn
 } from "./DOM_elements";
 
 import {createMonster} from "./createMonster";
@@ -36,7 +39,9 @@ skills[3].addEventListener("click", Kenny.skillFour.bind(Kenny));
 
 modalPuzzle.addEventListener("click", answerForTest);
 puzzleMoadalClose.addEventListener("click", closeModal);
+rulesCloseBtn.addEventListener("click", closeModal);
 
-window.addEventListener("load", (e)=>{
-  soundClick("/src/audio/main_them.mp3", 0.2);
-});
+window.onload = (e)=>{
+  soundClick("/src/audio/main_them.mp3", 0.1);
+  recordTableItem.innerText = +localStorage.getItem("score");
+};

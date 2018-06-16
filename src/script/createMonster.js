@@ -11,8 +11,22 @@ import {
   $monsterName
 } from './DOM_elements'
 
+import {
+  soundClick,
+  getRandomSound,
+  pathSound
+} from "./shared";
+
 const createMonster = function createMonster() {
   const Monster = new Monstro;
+  $monster.addEventListener("click", (e)=>{
+    const sound = getRandomSound([
+      `${pathSound}Sound_Zombi.mp3`,
+      `${pathSound}Sound_Zombi2.mp3`,
+      `${pathSound}Sound_Zombi3.mp3`
+    ]);
+    soundClick(sound, 0.4);
+  });
 
   $monsterHead.style.objectPosition = `${Monster.headX}px 0px`;
   $monsterLeftHand.style.objectPosition = `${Monster.handLeft}px 0px`;
@@ -23,5 +37,6 @@ const createMonster = function createMonster() {
   monsterHP.innerText = Monster.health;
   $monsterName.innerText = Monster.name;
 };
+
 
 export {createMonster};

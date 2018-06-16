@@ -21,6 +21,10 @@ const deadModal = document.querySelector('.dead-modal');
 const puzzleMoadalClose = document.querySelector('.puzzleMoadal__close');
 const $monsterName = document.querySelector('.monster__name');
 const scroreText = document.querySelector('.score__text');
+const recordTable = document.querySelector('.record-table');
+const recordTableList = document.querySelector('.record-table__list');
+const recordTableItem = document.querySelector('.record-table__count');
+const rulesCloseBtn = document.querySelector('.rules__close');
 
 export {
   modalPuzzle,
@@ -40,5 +44,9 @@ export {
   deadModal,
   puzzleMoadalClose,
   $monsterName,
-  scroreText
+  scroreText,
+  recordTable,
+  recordTableList,
+  recordTableItem,
+  rulesCloseBtn
 };
