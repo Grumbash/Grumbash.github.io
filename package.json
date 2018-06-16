@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Grumbash/TWD-Game.git"
+    "url": "git+https://github.com/Grumbash/Grumbash.git"
   },
   "author": "Rosev Gleb, Yuri Petyhov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Grumbash/TWD-Game/issues"
+    "url": "https://github.com/Grumbash/Grumbash/issues"
   },
-  "homepage": "https://github.com/Grumbash/TWD-Game#readme",
+  "homepage": "https://github.com/Grumbash/Grumbash#readme",
   "devDependencies": {
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
