@@ -3,6 +3,7 @@ import {
   setDamageToHero,
   setDamageToMonster
 } from './damage'
+
 var question;
 
 const rand =  function getRandomInt(min,max) {
@@ -30,14 +31,11 @@ function answerForTest(e){
   var $answer = document.getElementById('answer');
   if (e.target.id === "getAnswer") {
     if(question === +$answer.value){
-      console.log(`This is right answer: ${question}`);
-      console.log(`This is your answer: ${answer}`);
       setDamageToMonster();
       this.classList.toggle("hide-block");
       $answer.value = "";
     }else {
       console.log(`This is right answer: ${question}`);
-      console.log(`This is your answer: ${answer}`);
       setDamageToHero()
       this.classList.toggle("hide-block");
       $answer.value = "";

@@ -1,7 +1,8 @@
 import {
   heroHP,
   monsterHP,
-  deadModal
+  deadModal,
+  scroreText
 } from './DOM_elements';
 
 import {getRandomInt} from './randomQuestion';
@@ -21,6 +22,8 @@ function setDamageToMonster() {
   monsterHP.innerText = curHP - getRandomInt(20, 50);
   console.log("Monster health:" + monsterHP.innerText);
   if (monsterHP.innerText <= 0) {
+    let locScore = +scroreText.innerText;
+    scroreText.innerText = locScore + 1;
     createMonster();
   }
 }

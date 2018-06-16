@@ -1,6 +1,6 @@
 import {faild} from "./main";
 import {randomQuestion} from "./randomQuestion";
-import { modalPuzzle } from "./DOM_elements"
+import { modalPuzzle, skills } from "./DOM_elements"
 //mixed array
 Array.prototype.myshuffle = function () {
     var newArray = [];
@@ -27,7 +27,6 @@ function openPuzzleModal() {
 }
 
 function closeModal(e) {
-  console.log(this.parentElement);
   this.parentElement.classList.toggle("hide-block");
 }
 

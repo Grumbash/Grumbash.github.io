@@ -1,6 +1,7 @@
 const modalPuzzle = document.getElementById("puzzleMoadal");
 const tryAgainText = document.getElementById("tryAgain");
 const player = document.getElementById('hero');
+const battlefield = document.getElementById("battle");
 const skills = [
   document.getElementById("iconKnef"),
   document.getElementById("iconTarget"),
@@ -19,10 +20,13 @@ const $monsterRightLeg = document.querySelector('.monster__right-leg');
 const deadModal = document.querySelector('.dead-modal');
 const puzzleMoadalClose = document.querySelector('.puzzleMoadal__close');
 const $monsterName = document.querySelector('.monster__name');
+const scroreText = document.querySelector('.score__text');
+
 export {
   modalPuzzle,
   tryAgainText,
   player,
+  battlefield,
   skills,
   heroHP,
   monsterHP,
@@ -35,5 +39,6 @@ export {
   $monsterRightLeg,
   deadModal,
   puzzleMoadalClose,
-  $monsterName
+  $monsterName,
+  scroreText
 };

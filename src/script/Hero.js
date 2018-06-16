@@ -18,21 +18,25 @@ export default class Hero {
   }
 
   skillOne(e) {
+    this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
   }
 
   skillTwo(e) {
+    this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
   }
 
   skillThree(e) {
+    this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
   }
 
   skillFour(e) {
+    this.clickOnThis(e);
     randomQuestion();
     openPuzzleModal();
   }

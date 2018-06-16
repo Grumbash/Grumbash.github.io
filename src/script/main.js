@@ -12,9 +12,11 @@ import {
   modalPuzzle,
   tryAgainText,
   player,
+  battlefield,
   skills,
   heroHP,
-  puzzleMoadalClose
+  puzzleMoadalClose,
+  scroreText
 } from "./DOM_elements";
 
 import {createMonster} from "./createMonster";
@@ -23,6 +25,8 @@ const Kenny = new Hero("Kenny", skills);
 createMonster();
 
 heroHP.innerText = Kenny.health;
+scroreText.innerText = 0;
+
 player.addEventListener("click", Kenny.clickOnThis.bind(Kenny));
 
 skills[0].addEventListener("click", Kenny.skillOne.bind(Kenny));
@@ -32,5 +36,3 @@ skills[3].addEventListener("click", Kenny.skillFour.bind(Kenny));
 
 modalPuzzle.addEventListener("click", answerForTest);
 puzzleMoadalClose.addEventListener("click", closeModal);
-
-export var faild= document.getElementById("battle");

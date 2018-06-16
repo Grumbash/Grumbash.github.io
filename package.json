@@ -7,6 +7,10 @@
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mpode development --open"
   },
+  "engines":{
+    "node": "~10.0.0",
+    "npm": "~6.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Grumbash/TWD-Game.git"
@@ -29,8 +33,5 @@
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4"
-  },
-  "dependencies": {
-    "crel": "^3.1.0"
   }
 }

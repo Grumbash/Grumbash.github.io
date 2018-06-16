@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- <link rel="stylesheet" href="./src/style/main.css"> -->
-</head>
-<body>
-    <img src="./src/img/dead-modal.jpg" alt="dead-modal" class="dead-modal">
-    <div id="battle">
-      <div class="monster-wrapper">
-        <div class="monster">
-          <div class="health-bar" id="monster-health"></div>
-          <img src="./src/img/spriteHead.png" alt="monster__head" class="monster__head">
-          <div class="monster__body-wrapper">
-            <img src="./src/img/spriteHandLeft.png" alt="monster__left-hand" class="monster__left-hand">
-            <img src="./src/img/spriteBody.png" alt="monster__body" class="monster__body">
-            <img src="./src/img/spriteHandLeft.png" alt="monster__right-hand" class="monster__right-hand">
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>TWD-Game</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <img src="./src/img/dead-modal.jpg" alt="dead-modal" class="dead-modal">
+      <div id="battle">
+        <section class="score">
+          <span class="score__text"></span>
+          <img src="./src/img/spriteHead.png" alt="monster-img" class="score__img">
+        </section>
+        <div class="monster-wrapper">
+          <div class="monster">
+            <div class="health-bar" id="monster-health"></div>
+            <img src="./src/img/spriteHead.png" alt="monster__head" class="monster__head">
+            <div class="monster__body-wrapper">
+              <img src="./src/img/spriteHandLeft.png" alt="monster__left-hand" class="monster__left-hand">
+              <img src="./src/img/spriteBody.png" alt="monster__body" class="monster__body">
+              <img src="./src/img/spriteHandLeft.png" alt="monster__right-hand" class="monster__right-hand">
+            </div>
+            <div class="monster__legs-wrapper">
+              <img src="./src/img/legRight.png" alt="monster__left-leg" class="monster__left-leg">
+              <img src="./src/img/legRight.png" alt="monster__right-leg" class="monster__right-leg">
+            </div>
+            <p class="monster__name"></p>
           </div>
-          <div class="monster__legs-wrapper">
-            <img src="./src/img/legRight.png" alt="monster__left-leg" class="monster__left-leg">
-            <img src="./src/img/legRight.png" alt="monster__right-leg" class="monster__right-leg">
+        </div>
+        <div class="wrapGamer">
+          <div class="sprite" id="iconKnef"></div>
+          <div class="sprite" id="iconTarget"></div>
+          <div class="sprite" id="iconFist"></div>
+          <div class="sprite" id="iconHammer"></div>
+          <div id="hero">
+            <div class="health-bar" id="hero-health"></div>
+            <p class="hero-name">Kenny</p>
           </div>
-          <p class="monster__name"></p>
         </div>
       </div>
-      <div class="wrapGamer">
-        <div class="sprite" id="iconKnef"></div>
-        <div class="sprite" id="iconTarget"></div>
-        <div class="sprite" id="iconFist"></div>
-        <div class="sprite" id="iconHammer"></div>
-        <div id="hero">
-          <div class="health-bar" id="hero-health"></div>
+      <section id="puzzleMoadal" class="puzzleMoadal hide-block">
+        <div class="puzzleMoadal__rules">
+          <p class="puzzleMoadal__side-text">Solve this or get a damage</p>
+          <p class="puzzleMoadal__text" id ='quetion'></p>
         </div>
-      </div>
-    </div>
-    <section id="puzzleMoadal" class="puzzleMoadal hide-block">
-      <div class="puzzleMoadal__rules">
-        <p class="puzzleMoadal__side-text">Solve this or get a damage</p>
-        <p class="puzzleMoadal__text" id ='quetion'></p>
-      </div>
-      <div class="puzzleMoadal__inputs">
-        <input type="text" class="puzzleMoadal__input-text" id ="answer">
-        <button id="getAnswer" class="puzzleMoadal__getAnswer">Roll it!</button>
-      </div>
-      <p class="puzzleMoadal__tryAgain" id="tryAgain"></p>
-      <button class="puzzleMoadal__close">X</button>
-    </section>
-    <script src="./dist/script/bundle.js"></script>
-</body>
+        <div class="puzzleMoadal__inputs">
+          <input type="text" class="puzzleMoadal__input-text" id ="answer">
+          <button id="getAnswer" class="puzzleMoadal__getAnswer">Roll it!</button>
+        </div>
+        <p class="puzzleMoadal__tryAgain" id="tryAgain"></p>
+        <button class="puzzleMoadal__close" title="Get a damage">X</button>
+      </section>
+      <!-- <audio src=""></audio> -->
+      <script src="./dist/script/bundle.js"></script>
+  </body>
 </html>

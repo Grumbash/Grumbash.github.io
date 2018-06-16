@@ -55,12 +55,12 @@ export default class Monster {
     }
 
     randomProperty(obj) {
-        var keys = Object.keys(obj)
+        const keys = Object.keys(obj)
         return obj[keys[keys.length * Math.random() << 0]];
     }
 
     randomInteger() {
-      var rand = ~~(100 + Math.random() * (300 + 1 - 100));
+      const rand = ~~(100 + Math.random() * (40 + 1 - 100));
       return rand;
     }
 }
