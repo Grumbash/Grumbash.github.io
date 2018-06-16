@@ -25,9 +25,9 @@ function setDamageToHero() {
   ]);
   soundClick(sound, 0.4);
   if (heroHP.innerText <= 0) {
-    soundClick(sound, 0.4);
+    soundClick(`${pathSound}YouDied.mp3`, 0.75);
     deadModal.classList.toggle("opacity-modal");
-    setScoreOnTable(`${pathSound}YouDied.mp3`, 0.75);
+    setScoreOnTable();
   }
 }
 
