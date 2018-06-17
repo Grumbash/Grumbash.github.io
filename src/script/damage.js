@@ -2,7 +2,8 @@ import {
   heroHP,
   monsterHP,
   deadModal,
-  scroreText
+  scroreText,
+  recordTableItem
 } from './DOM_elements';
 
 import {
@@ -38,11 +39,13 @@ function setDamageToMonster() {
     let locScore = +scroreText.innerText;
     scroreText.innerText = locScore + 1;
     const sound = getRandomSound([
-      `${pathSound}Zombi_Fall.mp3`,
+      `${pathSound}Zombi_Fall1.mp3`,
       `${pathSound}Sound_Fall2.mp3`
     ]);
     soundClick(sound, 0.4);
     createMonster();
+    recordTableItem.innerText = +localStorage.getItem("score");
+    setScoreOnTable();
   }
 }
 
