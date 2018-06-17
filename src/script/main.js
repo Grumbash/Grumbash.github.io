@@ -40,6 +40,6 @@ skills[3].addEventListener("click", Kenny.skillFour.bind(Kenny));
 modalPuzzle.addEventListener("click", answerForTest);
 puzzleMoadalClose.addEventListener("click", closeModal);
 rulesCloseBtn.addEventListener("click", closeModal);
-setTimeout(soundClick("/src/audio/main_them.mp3", 0.1, true), 0);
+// setTimeout(soundClick("/src/audio/main_them.mp3", 0.1, true), 0);
 
 recordTableItem.innerText = +localStorage.getItem("score");
