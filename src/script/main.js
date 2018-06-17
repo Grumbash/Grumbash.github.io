@@ -42,6 +42,6 @@ puzzleMoadalClose.addEventListener("click", closeModal);
 rulesCloseBtn.addEventListener("click", closeModal);
 
 window.onload = (e)=>{
-  soundClick("/src/audio/main_them.mp3", 0.1);
+  soundClick("/src/audio/main_them.mp3", 0.1, true);
   recordTableItem.innerText = +localStorage.getItem("score");
 };

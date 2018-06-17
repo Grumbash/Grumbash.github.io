@@ -34,11 +34,12 @@ function closeModal(e) {
 }
 
 //audio
-function soundClick(path, vol) {
+function soundClick(path, vol, loop = false) {
     const audio = new Audio(); // Создаём новый элемент Audio
     audio.src = path; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
     audio.volume = vol || 1;
+    audio.loop = loop;
 }
 
 function getRandomSound(arr){
